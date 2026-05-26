@@ -64,21 +64,29 @@ ollama pull qwen2.5:7b
 
 ## 启动方法
 
-### 启动后端服务
+> **注意**：需要同时运行后端和前端两个服务，请打开两个终端窗口。
+
+### 终端 1：启动后端服务
 
 ```bash
+cd softmatter-app
 python api_server.py
 ```
 
 后端默认运行在 `http://127.0.0.1:8000`，提供 13 个业务 API 端点（15 个独立路径）。
 
-### 启动前端页面
+### 终端 2：启动前端页面
 
 ```bash
+cd softmatter-app
 streamlit run app.py
 ```
 
 前端默认运行在 `http://localhost:8501`，在浏览器中打开即可使用。
+
+### 快速验证
+
+启动后，访问 `http://localhost:8501`，如果看到 SoftMatterGPT 界面，说明安装成功。
 
 ## 功能概述
 
