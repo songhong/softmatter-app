@@ -1,0 +1,21 @@
+{
+  "current_model": "qwen2.5:7b",
+  "top_k": 5,
+  "similarity_threshold": 0.3,
+  "language": "zh-CN",
+  "safety_level": "standard",
+  "show_evidence_cards": true,
+  "show_confidence_score": true,
+  "max_response_length": 2000,
+  "teacher_review_enabled": true,
+  "feedback_enabled": true,
+  "data_stats": {
+    "knowledge_count": 60,
+    "literature_count": 25,
+    "recipe_count": 30,
+    "question_count": 25,
+    "data_status": "curated_teaching_examples",
+    "note": "所有文献记录和部分配方为教学示例(curated_example)，非真实PDF解析结果。系统支持后续导入真实PDF数据。"
+  },
+  "ollama_url": "http://localhost:11434"
+}
