@@ -26,8 +26,8 @@ SoftMatterGPT 是一个面向软物质科学课程的智能教学辅助系统。
 ### 1. 克隆项目
 
 ```bash
-git clone <repository-url>
-cd softmatter-gpt
+git clone https://github.com/songhong/softmatter-app.git
+cd softmatter-app
 ```
 
 ### 2. 安装 Python 依赖
