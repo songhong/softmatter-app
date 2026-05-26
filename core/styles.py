@@ -69,14 +69,29 @@ html, body, [class*="css"] {
     margin: 0.3rem 0;
     font-weight: 500;
 }
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] a span,
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] a p,
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] a div {
+    color: #ffffff !important;
+}
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover {
     color: #ffffff !important;
     background: #334155;
+}
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover span,
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover p,
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover div {
+    color: #ffffff !important;
 }
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] {
     color: #ffffff !important;
     background: #0d9488;
     font-weight: 600;
+}
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] span,
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] p,
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] div {
+    color: #ffffff !important;
 }
 
 /* ---- 侧边栏所有文字 ---- */
