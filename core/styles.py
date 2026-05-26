@@ -62,22 +62,20 @@ html, body, [class*="css"] {
 
 /* ---- 侧边栏导航链接 ---- */
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] a {
-    color: #0f172a !important;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
+    color: #ffffff !important;
+    background: #1e293b;
     border-radius: 8px;
     padding: 0.5rem 1rem;
     margin: 0.3rem 0;
     font-weight: 500;
 }
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover {
-    color: #0f172a !important;
-    background: #e2e8f0;
+    color: #ffffff !important;
+    background: #334155;
 }
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] {
     color: #ffffff !important;
     background: #0d9488;
-    border: 1px solid #0d9488;
     font-weight: 600;
 }
 
