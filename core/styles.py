@@ -39,22 +39,22 @@ html, body, [class*="css"] {
 
 /* ---- 侧边栏 ---- */
 [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, var(--smg-navy) 0%, #111827 100%);
+    background: #f8fafc;
 }
 [data-testid="stSidebar"] [data-testid="stMarkdown"] {
-    color: #cbd5e1;
+    color: #334155;
 }
 [data-testid="stSidebar"] [data-testid="stMarkdown"] h1,
 [data-testid="stSidebar"] [data-testid="stMarkdown"] h2,
 [data-testid="stSidebar"] [data-testid="stMarkdown"] h3 {
-    color: #f1f5f9;
+    color: #0f172a;
 }
 [data-testid="stSidebar"] .stCaption {
-    color: #94a3b8 !important;
+    color: #64748b !important;
 }
 [data-testid="stSidebar"] code {
-    background: rgba(255,255,255,0.08);
-    color: var(--smg-teal-light);
+    background: #e2e8f0;
+    color: #0d9488;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.85em;
@@ -62,29 +62,30 @@ html, body, [class*="css"] {
 
 /* ---- 侧边栏导航链接 ---- */
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] a {
-    color: #ffffff !important;
-    background: rgba(255,255,255,0.05);
+    color: #0f172a !important;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 8px;
     padding: 0.5rem 1rem;
-    margin: 0.2rem 0;
+    margin: 0.3rem 0;
     font-weight: 500;
 }
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover {
-    color: #ffffff !important;
-    background: rgba(255,255,255,0.15);
+    color: #0f172a !important;
+    background: #e2e8f0;
 }
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] {
     color: #ffffff !important;
-    background: rgba(13, 148, 136, 0.5);
+    background: #0d9488;
+    border: 1px solid #0d9488;
     font-weight: 600;
-    border-left: 3px solid #14b8a6;
 }
 
 /* ---- 侧边栏所有文字 ---- */
 [data-testid="stSidebar"] .stMarkdown p,
 [data-testid="stSidebar"] .stMarkdown li,
 [data-testid="stSidebar"] .stMarkdown span {
-    color: #cbd5e1;
+    color: #334155;
 }
 
 /* ---- 主内容区 ---- */
