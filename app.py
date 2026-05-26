@@ -81,6 +81,29 @@ st.markdown(
         font-size: 0.85em;
     }
 
+    /* ---- 侧边栏导航链接 ---- */
+    [data-testid="stSidebar"] a,
+    [data-testid="stSidebar"] [data-testid="stSidebarNav"] a,
+    [data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a {
+        color: #cbd5e1 !important;
+    }
+    [data-testid="stSidebar"] a:hover,
+    [data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover {
+        color: #f1f5f9 !important;
+        background: rgba(255,255,255,0.08);
+    }
+    [data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] {
+        color: #ffffff !important;
+        background: rgba(13, 148, 136, 0.3);
+    }
+
+    /* ---- 侧边栏所有文字 ---- */
+    [data-testid="stSidebar"] .stMarkdown p,
+    [data-testid="stSidebar"] .stMarkdown li,
+    [data-testid="stSidebar"] .stMarkdown span {
+        color: #cbd5e1;
+    }
+
     /* ---- 主内容区 ---- */
     .main .block-container {
         padding-top: 2rem;
