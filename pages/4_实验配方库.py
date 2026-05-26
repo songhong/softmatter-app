@@ -6,6 +6,7 @@
 """
 
 import core.path_setup  # noqa: F401
+import core.styles; core.styles.apply()
 
 from dataclasses import asdict
 

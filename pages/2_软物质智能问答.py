@@ -7,6 +7,7 @@
 """
 
 import core.path_setup  # noqa: F401
+import core.styles; core.styles.apply()
 
 import uuid
 from datetime import datetime

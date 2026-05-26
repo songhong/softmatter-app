@@ -7,6 +7,7 @@ Ollama 模型检测、刷新、选择和测试。
 """
 
 import core.path_setup  # noqa: F401
+import core.styles; core.styles.apply()
 
 import streamlit as st
 import config
