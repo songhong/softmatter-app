@@ -61,19 +61,23 @@ html, body, [class*="css"] {
 }
 
 /* ---- 侧边栏导航链接 ---- */
-[data-testid="stSidebar"] a,
-[data-testid="stSidebar"] [data-testid="stSidebarNav"] a,
-[data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a {
-    color: #cbd5e1 !important;
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] a {
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+    font-weight: 500;
 }
-[data-testid="stSidebar"] a:hover,
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover {
-    color: #f1f5f9 !important;
-    background: rgba(255,255,255,0.08);
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.15);
 }
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] li > a[aria-selected="true"] {
     color: #ffffff !important;
-    background: rgba(13, 148, 136, 0.3);
+    background: rgba(13, 148, 136, 0.5);
+    font-weight: 600;
+    border-left: 3px solid #14b8a6;
 }
 
 /* ---- 侧边栏所有文字 ---- */
