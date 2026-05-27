@@ -9,6 +9,12 @@ import os
 import secrets
 from pathlib import Path
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 # ---------------------------------------------------------------------------
 # 项目根目录
 # ---------------------------------------------------------------------------
@@ -37,7 +43,7 @@ QA_HISTORY_CSV = LOGS_DIR / "qa_history.csv"
 # Ollama 配置
 # ---------------------------------------------------------------------------
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "qwen2.5:7b")
+DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "qwen3.5:9b")
 
 # ---------------------------------------------------------------------------
 # RAG 检索配置

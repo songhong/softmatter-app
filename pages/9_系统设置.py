@@ -51,6 +51,9 @@ def main():
     # 检测连接
     if detect_clicked:
         with st.spinner("正在检测 Ollama 服务连接..."):
+            # 清除缓存，强制重新检测
+            llm_client._status_cache["result"] = None
+            llm_client._status_cache["timestamp"] = 0.0
             status = llm_client.check_ollama_status()
         if status.online:
             st.success(f"{status.message}")

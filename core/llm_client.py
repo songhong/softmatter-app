@@ -148,7 +148,8 @@ def check_ollama_status() -> OllamaStatus:
             online=False,
             message=f"Ollama 返回异常状态码 {resp.status_code}，请检查服务是否正常运行。",
         ))
-    except requests.ConnectionError:
+    except requests.ConnectionError as exc:
+        logger.error("check_ollama_status 连接失败: %s | URL: %s", exc, url)
         return _cache_and_return(OllamaStatus(
             online=False,
             message=f"无法连接 Ollama 服务（{url}），请确认 Ollama 已启动且地址正确。",
@@ -192,8 +193,9 @@ def list_models() -> tuple[list[dict[str, Any]], str]:
                 })
             return models, ""
         return [], f"Ollama 返回异常状态码 {resp.status_code}。"
-    except requests.ConnectionError:
-        return [], "无法连接 Ollama 服务，请确认 Ollama 已启动。"
+    except requests.ConnectionError as exc:
+        logger.error("连接 Ollama 失败: %s | URL: %s", exc, url)
+        return [], f"无法连接 Ollama 服务（{url}），请确认 Ollama 已启动。"
     except requests.Timeout:
         return [], "连接 Ollama 服务超时，请检查网络。"
     except requests.RequestException as exc:

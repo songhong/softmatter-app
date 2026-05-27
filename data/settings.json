@@ -1,5 +1,5 @@
 {
-  "current_model": "qwen2.5:7b",
+  "current_model": "qwen3.5:9b",
   "top_k": 5,
   "similarity_threshold": 0.3,
   "language": "zh-CN",
